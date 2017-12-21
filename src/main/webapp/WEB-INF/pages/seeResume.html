@@ -1,0 +1,189 @@
+<style>
+	.star {
+	color: red;
+}
+</style>
+
+
+
+<div>
+	<div class="panel-body" style="background-color: #FFFFFF;">
+		<fieldset>
+			<legend> 基本信息 </legend>
+			
+			<img style="float:right;" width="100px" height="150px" id="img" src="" onerror="javascript:this.src='img/personal_default.jpg'">
+						
+			<form id="baseForm" role="form">
+				<table class="table">
+					
+						<tr>
+							<td class="hide"><input type="text" name="userId">
+							<input type="text" name="id">
+							
+							</td>
+							<td>姓名<span class="star">*</span>：
+							</td>
+							<td id="name" style="color:blue"></td>
+							<td>性别<span class="star">*</span>：
+							</td>
+							<td id="gender"style="color:blue">
+							</td>
+						</tr>
+						
+						<tr>
+							<td>出生年月<span class="star">*</span>：
+							</td>
+							<td id="birthday" style="color:blue"></td>
+							<td>民族<span class="star">*</span>：
+							</td>
+							<td id="race" style="color:blue"></td>
+						</tr>
+						<tr>
+							<td>出生地<span class="star">*</span>：
+							</td>
+							<td id="nativePlace"style="color:blue"></td>
+							<td>籍贯<span class="star">*</span>：
+							</td>
+							<td id="origin" style="color:blue"></td>
+						</tr>
+						<tr>
+							<td>国籍<span class="star">*</span>：
+							</td>
+							<td id="nationality"style="color:blue"></td>
+							<td>户口所在地<span class="star">*</span>：
+							</td>
+							<td id="permanentAddress"style="color:blue"></td>
+						</tr>
+						<tr>
+							<td>身高<span class="star">*</span>：
+							</td>
+							<td id="height" style="color:blue"></td>
+							<td>生源地<span class="star">*</span>：
+							</td>
+							<td id="sourcePlace"style="color:blue"></td>
+						</tr>
+						<tr>
+							<td>政治面貌<span class="star">*</span>：
+							</td>
+							<td id="party"style="color:blue">
+									</td>
+							<td>入党时间<span class="star">*</span>：
+							</td>
+							<td id="timeToJoinParty"style="color:blue"></td>
+						</tr>
+						<tr>
+							<td>最高学历<span class="star">*</span>：
+							</td>
+							<td id="highestEducation"style="color:blue">
+									</td>
+							<td>最高学位<span class="star">*</span>：
+							</td>
+							<td id="highestDegree"style="color:blue"></td>
+						</tr>
+						<tr>
+							<td>毕业学校<span class="star">*</span>：
+							</td>
+							<td id="educationSchool"style="color:blue"></td>
+							<td>专业<span class="star">*</span>：
+							</td>
+							<td id="major"style="color:blue"></td>
+						</tr>
+						<tr>
+							<td>现工作单位<span class="star">*</span>：
+							</td>
+							<td id="currEmployer"style="color:blue"></td>
+							<td>职务<span class="star">*</span>：
+							</td>
+							<td id="position"style="color:blue"></td>
+						</tr>
+						<tr>
+							<td>参加工作时间<span class="star">*</span>：
+							</td>
+							<td id="timeToStartWork"style="color:blue"></td>
+							<td>计算机水平证书：</td>
+							<td id="computerCertificate"style="color:blue"></td>
+						</tr>
+						<tr>
+							<td>专业技术资格：</td>
+							<td id="professionalQualification"style="color:blue"></td>
+							<td>专业特长：</td>
+							<td id="professionalSpeciality"style="color:blue"></td>
+						</tr>
+						<tr>
+							<td>外语语种<span class="star">*</span>：
+							</td>
+							<td id="foreignLanguages"style="color:blue"></td>
+							<td>外语水平证书<span class="star">*</span>：
+							</td>
+							<td id="foreignLanguagesCertificate"style="color:blue"></td>
+						</tr>
+						<tr>
+							<td>身份证号<span class="star">*</span>：
+							</td>
+							<td id="cardId" style="color:blue"></td>
+							<td>家庭住址<span class="star">*</span>：
+							</td>
+							<td id="residenceAddress"style="color:blue"></td>
+						</tr>
+						<tr>
+							<td>手机号码<span class="star">*</span>：
+							</td>
+							<td id="phone"style="color:blue"></td>
+							<td>E-Mail<span class="star">*</span>：
+							</td>
+							<td id="email"style="color:blue"></td>
+						</tr>
+						<tr>
+							<td>婚姻状况<span class="star">*</span>：
+							</td>
+							<td id="marriage"style="color:blue"></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>奖惩及历年年度考核状况：
+							</td>
+							<td id="remark"style="color:blue"></td>
+							<td>
+								是否有亲属在本行工作：
+							</td>
+							<td id="isKinWorkHere"style="color:blue"></td>
+						</tr>
+					
+				</table>
+			</form>
+		</fieldset>
+		<fieldset>
+			<legend>教育经历</legend>
+			
+			<div id="eduForm">
+				<table class="table">
+					
+				</table>
+			</div>
+			
+		</fieldset>
+		<fieldset>
+			<legend>工作经历（实习请注明）</legend>
+			
+			<div id="workForm">
+				<table class="table">
+					
+				</table>
+			</div>
+			
+		</fieldset>
+		<fieldset>
+			<legend>家庭成员及主要社会关系（至少填写父母配偶及子女情况）</legend>
+			
+			<div id="homeForm">
+				<table class="table">
+					<tbody>
+						
+					</tbody>
+				</table>
+			</div>
+		</fieldset>
+	</div>
+	<script src="js/seeResume.js" type="text/javascript"></script>
+</div>

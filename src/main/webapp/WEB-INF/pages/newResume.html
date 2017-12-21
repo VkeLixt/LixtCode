@@ -1,0 +1,431 @@
+<style>
+fieldset img {
+	width: 120px;
+	height: 100px;
+	border: 1px solid #D9E7F8;
+	margin: auto;
+}
+
+input[type=file] {
+	padding: 0;
+	float: left;
+	width: 200px;
+}
+
+.clearFloat {
+	clear: both;
+}
+
+.star {
+	color: red;
+}
+
+.form-control {
+	padding: 0;
+}
+
+table tr td {
+	padding: 0;
+}
+button .btn-xs {
+	padding: 5px 10px;
+}
+</style>
+<div class="panel panel-default" style="background-color: #D9E7F8;">
+	<div class="panel-title">
+		<p style="font-weight: bold;">分行简历--所有对简历的修改操作都要点击【保存】按钮保存</p>
+	</div>
+	<a href="#">查看简历填写说明</a>
+	<div class="panel-body" style="background-color: #FFFFFF;">
+		<fieldset>
+			<legend>个人头像 </legend>
+			<div>
+				<img id="img" src="" onerror="javascript:this.src='img/personal_default.jpg'" />
+			</div>
+			<div>
+				<input type="file" id="uploadFile" name="file" /> <a href="#"
+					id="upload">上传照片</a>
+			</div>
+			<div class="clearFloat"></div>
+		</fieldset>
+		<fieldset>
+			<legend> 基本信息 </legend>
+			<form id="baseForm" role="form">
+				<table class="table">
+					<tr>
+						<td class="hide"><input type="text" name="userId">
+						<input type="text" name="id">
+						
+						</td>
+						<td>姓名<span class="star">*</span>：
+						</td>
+						<td><input type="text" name="name" class="form-control" /></td>
+						<td>性别<span class="star">*</span>：
+						</td>
+						<td>
+							<div class="checkbox">
+								<label class="checkbox-inline"> <input type="radio"
+									name="gender" value="1" checked> 男
+								</label> <label class="checkbox-inline"> <input type="radio"
+									name="gender" value="2"> 女
+								</label>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>出生年月<span class="star">*</span>：
+						</td>
+						<td><input type="date" name="birthday" class="form-control" /></td>
+						<td>民族<span class="star">*</span>：
+						</td>
+						<td><input type="text" name="race" class="form-control" /></td>
+					</tr>
+					<tr>
+						<td>出生地<span class="star">*</span>：
+						</td>
+						<td><input type="text" name="nativePlace"
+							class="form-control" /></td>
+						<td>籍贯<span class="star">*</span>：
+						</td>
+						<td><input type="text" name="origin" class="form-control" /></td>
+					</tr>
+					<tr>
+						<td>国籍<span class="star">*</span>：
+						</td>
+						<td><input type="text" name="nationality"
+							class="form-control" /></td>
+						<td>户口所在地<span class="star">*</span>：
+						</td>
+						<td><input type="text" name="permanentAddress"
+							class="form-control" /></td>
+					</tr>
+					<tr>
+						<td>身高<span class="star">*</span>：
+						</td>
+						<td><input type="text" name="height" class="form-control" /></td>
+						<td>生源地<span class="star">*</span>：
+						</td>
+						<td><input type="text" name="sourcePlace"
+							class="form-control" /></td>
+					</tr>
+					<tr>
+						<td>政治面貌<span class="star">*</span>：
+						</td>
+						<td><select name="party" class="form-control">
+								<option>群众</option>
+								<option>党员</option>
+								<option>团员</option>
+						</select></td>
+						<td>入党时间<span class="star">*</span>：
+						</td>
+						<td><input type="date" name="timeToJoinParty"
+							class="form-control" /></td>
+					</tr>
+					<tr>
+						<td>最高学历<span class="star">*</span>：
+						</td>
+						<td><select name="highestEducation" class="form-control">
+								<option>大学本科</option>
+								<option>专科</option>
+								<option>中专</option>
+						</select></td>
+						<td>最高学位<span class="star">*</span>：
+						</td>
+						<td><input type="text" name="highestDegree"
+							class="form-control" /></td>
+					</tr>
+					<tr>
+						<td>毕业学校<span class="star">*</span>：
+						</td>
+						<td><input type="text" name="educationSchool"
+							class="form-control" /></td>
+						<td>专业<span class="star">*</span>：
+						</td>
+						<td><input type="text" name="major" class="form-control" /></td>
+					</tr>
+					<tr>
+						<td>现工作单位<span class="star">*</span>：
+						</td>
+						<td><input type="text" name="currEmployer"
+							class="form-control" /></td>
+						<td>职务<span class="star">*</span>：
+						</td>
+						<td><input type="text" name="position" class="form-control" /></td>
+					</tr>
+					<tr>
+						<td>参加工作时间<span class="star">*</span>：
+						</td>
+						<td><input type="date" name="timeToStartWork"
+							class="form-control"></td>
+						<td>计算机水平证书：</td>
+						<td><select name="computerCertificate" class="form-control">
+								<option>一级</option>
+								<option>二级</option>
+								<option>无</option>
+						</select></td>
+					</tr>
+					<tr>
+						<td>专业技术资格：</td>
+						<td><input type="text" name="professionalQualification"
+							class="form-control" /></td>
+						<td>专业特长：</td>
+						<td><input type="text" name="professionalSpeciality"
+							class="form-control" /></td>
+					</tr>
+					<tr>
+						<td>外语语种<span class="star">*</span>：
+						</td>
+						<td><input type="text" name="foreignLanguages"
+							class="form-control" /></td>
+						<td>外语水平证书<span class="star">*</span>：
+						</td>
+						<td><select name="foreignLanguagesCertificate"
+							class="form-control">
+								<option>B级</option>
+								<option>四级</option>
+								<option>六级</option>
+						</select></td>
+					</tr>
+					<tr>
+						<td>身份证号<span class="star">*</span>：
+						</td>
+						<td><input type="text" name="cardId" class="form-control" /></td>
+						<td>家庭住址<span class="star">*</span>：
+						</td>
+						<td><input type="text" name="residenceAddress"
+							class="form-control" /></td>
+					</tr>
+					<tr>
+						<td>手机号码<span class="star">*</span>：
+						</td>
+						<td><input type="text" name="phone" class="form-control" /></td>
+						<td>E-Mail<span class="star">*</span>：
+						</td>
+						<td><input type="text" name="email" class="form-control" /></td>
+					</tr>
+					<tr>
+						<td>婚姻状况<span class="star">*</span>：
+						</td>
+						<td><div class="checkbox">
+								<label class="checkbox-inline"><input type="radio"
+									name="marriage" value="1" checked> 未婚</label> <label
+									class="checkbox-inline"><input type="radio"
+									name="marriage" value="2"> 已婚</label> <label
+									class="checkbox-inline"><input type="radio"
+									name="marriage" value="3"> 离异</label>
+							</div></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>奖惩及历年年度考<br /> 核状况：
+						</td>
+						<td colspan="3"><textarea name="remark" class="form-control"
+								style="resize: none; width: 540px; height: 100px;"
+								placeholder="最大文字长度200字（含标点符号）"></textarea>
+							<div class="checkbox">
+								<label class="checkbox-inline"><input type="radio"
+									name="isKinWorkHere" value="1" checked><span>有亲属在本行工作
+								</span></label> <label class="checkbox-inline"><input type="radio"
+									name="isKinWorkHere" value="2"><span>无亲属在本行工作</span></label>
+							</div></td>
+					</tr>
+					<tr>
+						<td colspan="4">
+							<button type="button" id="saveBase"
+								class="btn btn-success btn-md">
+								<span class="glyphicon glyphicon-floppy-disk">保存基本信息</span>
+							</button>
+						</td>
+					</tr>
+				</table>
+			</form>
+		</fieldset>
+		<fieldset>
+			<legend>教育经历</legend>
+			<button type="button" id="saveEdu"
+				class="btn btn-xs btn-success">
+				<span class="glyphicon glyphicon-plus-sign">保存</span>
+			</button>
+			<button type="button" id="delEdu" class="btn btn-xs btn-danger">
+				<span class="glyphicon glyphicon-minus-sign">删除</span>
+			</button>
+			<button type="button" class="btn btn-xs btn-primary" onclick="clearEduForm()">
+			<span class="glyphicon glyphicon-repeat">重置</span>
+			</button>
+			<form id="eduForm">
+				<table class="table">
+					<tr>
+					<td class="hide"><input type="text" name="id"></td>
+						<td>开始时间<span style="color: red;">*</span>：
+						</td>
+						<td><input type="date" class="form-control"
+							placeholder="请选择开始时间" name="startTime"/></td>
+						<td>结束时间<span style="color: red;">*</span>：
+						</td>
+						<td><input type="date" class="form-control"
+							placeholder="请选择结束时间" name="endTime"/></td>
+						<td>学校名称<span style="color: red;">*</span>：
+						</td>
+						<td><input type="text" class="form-control" name="schoolName"/></td>
+					</tr>
+					<tr>
+						<td>所学专业<span style="color: red;">*</span>：
+						</td>
+						<td><input type="text" class="form-control" name="major"/></td>
+						<td>所获学位<span style="color: red;">*</span>：
+						</td>
+						<td><input type="text" class="form-control" name="degree"/></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+			</form>
+			<table class="table table-bordered table-hover">
+				<tr>
+				<thead id="eduThead">
+					<tr>
+						<th style="text-align: center;"><input type="checkbox" /></th>
+						<th>开始时间</th>
+						<th>结束时间</th>
+						<th>学校名称</th>
+						<th>所学专业</th>
+						<th>所获学位</th>
+						<th>编辑</th>
+					</tr>
+				</thead>
+				<tbody id="eduTbody">
+				</tbody>
+			</table>
+		</fieldset>
+		<fieldset>
+			<legend>工作经历（实习请注明）</legend>
+			<button type="button" id="savaWork" class="btn btn-xs btn-success">
+				<span class="glyphicon glyphicon-plus-sign">保存</span>
+			</button>
+			<button type="button" id="delWork"class="btn btn-xs btn-danger">
+				<span class="glyphicon glyphicon-minus-sign">删除</span>
+			</button>
+			<button type="button" class="btn btn-xs btn-primary" onclick="clearWorkForm()">
+			<span class="glyphicon glyphicon-repeat">重置</span>
+			</button>
+			<form id="workForm">
+				<table class="table">
+					<tr><td class="hide"><input type="text" name="id"></td>
+						<td>开始时间<span style="color: red;">*</span>：
+						</td>
+						<td><input type="date" name="startTime"
+							class="form-control" /></td>
+						<td>结束时间<span style="color: red;">*</span>：
+						</td>
+						<td><input type="date" name="endTime"
+							class="form-control" /></td>
+					</tr>
+					<tr>
+						<td>单位名称<span style="color: red;">*</span>：
+						</td>
+						<td><input type="text" name="unitName" class="form-control" /></td>
+						<td>职务<span style="color: red;">*</span>：
+						</td>
+						<td><input type="text" name="position" class="form-control" /></td>
+					</tr>
+				</table>
+			</form>
+			<table class="table table-bordered table-hover">
+				<thead id="workThead">
+					<tr>
+						<th><input type="checkbox"></th>
+						<th>开始时间</th>
+						<th>结束时间</th>
+						<th>单位名称</th>
+						<th>职务</th>
+						<th>编辑</th>
+					</tr>
+				</thead>
+				<tbody id="workTbody">
+				
+				</tbody>
+			</table>
+		</fieldset>
+		<fieldset>
+			<legend>家庭成员及主要社会关系（至少填写父母配偶及子女情况）</legend>
+			<button type="button" id="saveHome" class="btn btn-xs btn-success">
+				<span class="glyphicon glyphicon-plus-sign">保存</span>
+			</button>
+			<button type="button" id="delHome" class="btn btn-xs btn-danger">
+				<span class="glyphicon glyphicon-minus-sign">删除</span>
+			</button>
+			<button type="button" class="btn btn-xs btn-primary" onclick="clearHomeForm()">
+			<span class="glyphicon glyphicon-repeat">重置</span>
+			</button>
+			<form id="homeForm">
+				<table class="table">
+					<tbody>
+						<tr>
+						<td class="hide"><input type="text" name="id"></td>
+							<td><span>称谓<span style="color: red;">*</span>：
+							</span></td>
+							<td><input type="text" name="appellation"class="form-control" /></td>
+							<td><span>姓名<span style="color: red;">*</span>：
+							</span></td>
+							<td><input type="text" name="name" class="form-control" /></td>
+							<td><span>政治面貌<span style="color: red;">*</span>：
+							</span></td>
+							<td><select name="party" class="form-control">
+									<option>---请选择---</option>
+									<option>党员</option>
+									<option>预备党员</option>
+									<option>共青团员</option>
+									<option>群众</option>
+									<option>其他</option>
+							</select></td>
+						</tr>
+						<tr>
+							<td><span>国籍<span style="color: red;">*</span>：
+							</span></td>
+							<td><input type="text" name="nationality" class="form-control"></td>
+							<td><span> 出生年月<span style="color: red;">*</span>：
+							</span></td>
+							<td>
+								<div class="input-group input-group-sm" style="width: 80px;">
+									<input type="date" name="birthday" class="form-control">
+								</div>
+							</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><span>工作单位及职务<span style="color: red;">*</span>：
+							</span></td>
+							<td colspan="5"><textarea name="workUnitPosition" class="form-control"
+									style="resize: none; width: 540px; height: 100px;"
+									placeholder="最大文字长度200字（含标点符号）"></textarea></td>
+						</tr>
+					</tbody>
+				</table>
+			</form>
+			<table class="table table-bordered table-hover">
+				<thead id="homeThead">
+					<tr>
+						<th><input type="checkbox" value=""></th>
+						<th>称谓</th>
+						<th>姓名</th>
+						<th>政治面貌</th>
+						<th>国籍</th>
+						<th>出生年月</th>
+						<th>工作单位及职务</th>
+						<th>编辑</th>
+					</tr>					
+				</thead>
+				<tbody id="homeTbody">
+				
+				</tbody>
+			</table>
+		</fieldset>
+	</div>
+	<script src="js/photo.js" type="text/javascript"></script>
+	<script src="js/newResume.js" type="text/javascript"></script>
+	<script src="js/resumeEdu.js" type="text/javascript"></script>
+	<script src="js/resumeBase.js" type="text/javascript"></script>
+	<script src="js/resumeWork.js" type="text/javascript"></script>
+	<script src="js/resumeHome.js" type="text/javascript"></script>
+</div>
